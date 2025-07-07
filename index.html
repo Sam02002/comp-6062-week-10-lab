@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Week 10 Lab</title>
+    </head>
+
+    <body>
+        <main>
+            <div id="app">
+                <h1>Week 10 Lab</h1>
+            
+                <input type="text" v-model="firstName" placeholder="First Name">
+                <input type="text" v-model="lastName" placeholder="Last Name">
+
+                <p>
+                    Full Name : {{ fullName }}
+                </p>
+                <input type="number" v-model="quantity" min="0" placeholder="0">
+
+                <p>
+                    Price Per item: ${{ pricePerItem }}
+                </p>
+
+                <p>
+                    Total Price:${{ totalPrice }}
+                </p>
+                
+                <p>
+                <button @click = "clearFields">Clear Fields</button>
+                </p>
+            </div>
+
+        </main>
+
+        <!--Vue js-->
+        <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+        <!--custom js-->
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
